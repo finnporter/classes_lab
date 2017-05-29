@@ -1,5 +1,5 @@
 class Student
-  attr_reader :student_name, :cohort
+  attr_accessor :student_name, :cohort
  
   def initialize(student_name, cohort)
     @student_name = student_name
