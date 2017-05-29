@@ -5,7 +5,7 @@ require_relative './team'
 class SportsTeam < MiniTest::Test
 
   def setup
-    @chicago = Team.new("Sky", "Amber Stocks")
+    @chicago = Team.new("Sky", "Pokey Chapman")
   end
 
   def test_team_name
@@ -17,6 +17,11 @@ class SportsTeam < MiniTest::Test
   end
 
   def test_coach
+    assert_equal("Pokey Chapman", @chicago.coach)
+  end
+
+  def test_set_coach
+    @chicago.coach=("Amber Stocks")
     assert_equal("Amber Stocks", @chicago.coach)
   end
 
