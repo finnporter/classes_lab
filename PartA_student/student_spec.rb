@@ -11,11 +11,15 @@ class CodeClanStudents < MiniTest::Test
   end
 
   def test_student
-    assert_equal("Glen", @student_01.student)
+    assert_equal("Glen", @student_01.student_name)
   end
 
   def test_cohort
     assert_equal(9, @student_03.cohort)
+  end
+
+  def set_student
+    
   end
 
 end
