@@ -38,6 +38,14 @@ class SportsTeam < MiniTest::Test
     assert_equal(0, @chicago.points)
   end
 
+  def test_add_or_remove_points__win
+    assert_equal(1, @chicago.add_or_remove_points(1))
+  end
+
+  def test_add_or_remove_points__defeat
+    assert_equal(-1, @chicago.add_or_remove_points(-1))
+  end
+
 
 
 end

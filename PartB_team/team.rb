@@ -21,6 +21,10 @@ class Team
     end
   end
 
+  def add_or_remove_points(points)
+    @points += points
+  end
+
 
 
 
