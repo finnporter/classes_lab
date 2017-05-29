@@ -6,4 +6,8 @@ class Student
     @cohort = cohort
   end
 
+  def student_talks(sentence)
+    return sentence
+  end
+
 end
