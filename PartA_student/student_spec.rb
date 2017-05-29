@@ -32,4 +32,8 @@ class CodeClanStudents < MiniTest::Test
     assert_equal("I can talk.", @student_01.student_talks("I can talk."))
   end
 
+  def test_student_favourite_language
+    assert_equal("I love Ruby.", @student_02.student_favourite_language("Ruby"))
+  end
+
 end
