@@ -1,8 +1,7 @@
 class Library
-  attr_accessor :book, :title, :rental_details, :student_name, :date
+  attr_accessor :title, :rental_details, :student_name, :date
 
-  def initialize(book, title, rental_details, student_name, date)
-    @book = book
+  def initialize(title, rental_details, student_name, date)
     @title = title
     @rental_details = rental_details
     @student_name = student_name
